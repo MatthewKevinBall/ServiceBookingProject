@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/ServiceBooking.Application/ServiceBooking.Application.csproj" />
+    <Project Path="src/ServiceBooking.Domain/ServiceBooking.Domain.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/ServiceBooking.Application.Tests/ServiceBooking.Application.Tests.csproj" />
+    <Project Path="tests/ServiceBooking.Domain.Tests/ServiceBooking.Domain.Tests.csproj" />
+  </Folder>
+</Solution>
