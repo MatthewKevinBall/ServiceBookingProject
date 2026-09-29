@@ -1,0 +1,29 @@
+A rego is a number plate belonging to a vehicle 
+Cars have a max of 6.Other vehicles can have a max of 5. So a rego belongs to a vehicle. 
+Build out only hte case for car to start
+
+Only 1 space is allowed
+
+ABC 123 is 7 characters and thus invalid. ABC123 is fine AB 123 is fine. AB 123 != AB123
+Only alpha numeric and space character are allowed,
+Spaces can only go in the middle of the number plate, not the first and last character
+
+
+new Rego("ABC123") == new Rego("ABC123") should be equal, so a rego is a record
+
+for project, set min to 5 characters
+max to 6 characters
+
+Constructed with a required string. Which rejects spaces at start, spaces at end. Sets lowercase letters to uppercase
+so
+
+" ab123" = REJECTED
+"ab123 " = REJECTED
+"a b c" = rejected
+"ab 123" = fine
+"abcdef" = fine
+"abcdefg" = REJECTED
+"" = REJECTED
+" " = REJECTED
+"ac" = REJECTED
+"abc123" == "ABC123" = TRUE
