@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TestingPlatformDotnetTestSupport>true</TestingPlatformDotnetTestSupport>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="xunit.runner.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="Xunit" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="xunit.v3.mtp-v2" Version="4.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\ServiceBooking.Application\ServiceBooking.Application.csproj" />
+    <ProjectReference Include="..\..\src\ServiceBooking.Domain\ServiceBooking.Domain.csproj" />
+    <ProjectReference Include="..\..\src\ServiceBooking.Infrastructure\ServiceBooking.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\src\ServiceBooking.ServiceConsole\ServiceBooking.ServiceConsole.csproj" />
+  </ItemGroup>
+
+</Project>

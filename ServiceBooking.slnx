@@ -2,9 +2,13 @@
   <Folder Name="/src/">
     <Project Path="src/ServiceBooking.Application/ServiceBooking.Application.csproj" />
     <Project Path="src/ServiceBooking.Domain/ServiceBooking.Domain.csproj" />
+    <Project Path="src/ServiceBooking.Infrastructure/ServiceBooking.Infrastructure.csproj" />
+    <Project Path="src/ServiceBooking.ServiceConsole/ServiceBooking.ServiceConsole.csproj" />
   </Folder>
   <Folder Name="/tests/">
     <Project Path="tests/ServiceBooking.Application.Tests/ServiceBooking.Application.Tests.csproj" />
+    <Project Path="tests/ServiceBooking.ArchitectureTests/ServiceBooking.ArchitectureTests.csproj" />
     <Project Path="tests/ServiceBooking.Domain.Tests/ServiceBooking.Domain.Tests.csproj" />
+    <Project Path="tests/ServiceBooking.Infrastructure.Tests/ServiceBooking.Infrastructure.Tests.csproj" />
   </Folder>
 </Solution>
